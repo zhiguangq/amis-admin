@@ -1,0 +1,29 @@
+{
+  "type": "page",
+  "title": "增删改查",
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/tb/new",
+      "label": "新增",
+      "primary": true
+    }
+  ],
+  "body": {
+    "type": "crud",
+    "api": "/get",
+    "columns": [
+      {
+        "name": "id",
+        "label": "ID",
+        "type": "text"
+      },
+      {
+        "name": "audio",
+        "label": "音频",
+        "type": "audio"
+      }
+    ]
+  }
+}

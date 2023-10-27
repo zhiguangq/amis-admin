@@ -6,7 +6,7 @@
     {
       "type": "button",
       "actionType": "link",
-      "link": "/crud/list",
+      "link": "/tb/list",
       "label": "返回列表"
     }
   ],
@@ -14,7 +14,7 @@
     {
       "title": "",
       "type": "form",
-      "redirect": "/crud/list",
+      "redirect": "/tb/list",
       "name": "sample-edit-form",
       "api": "${API_HOST}/create",
       "controls": [
@@ -36,30 +36,6 @@
           "type": "text",
           "name": "browser",
           "label": "Browser"
-        },
-        {
-          "type": "divider"
-        },
-        {
-          "type": "text",
-          "name": "platform",
-          "label": "Platform(s)"
-        },
-        {
-          "type": "divider"
-        },
-        {
-          "type": "text",
-          "name": "version",
-          "label": "Engine version"
-        },
-        {
-          "type": "divider"
-        },
-        {
-          "type": "text",
-          "name": "grade",
-          "label": "CSS grade"
         }
       ]
     }
