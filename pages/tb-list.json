@@ -12,12 +12,39 @@
   ],
   "body": {
     "type": "crud",
-    "api": "/get",
+    "api": "${API_HOST}/api/get",
     "columns": [
       {
         "name": "id",
         "label": "ID",
         "type": "text"
+      },
+      {
+        "type": "operation",
+        "label": "操作",
+        "width": "",
+	"buttons": [
+            {
+              "type": "button-group",
+              "buttons": [
+                {
+                  "type": "button",
+                  "label": "查看",
+                  "level": "primary",
+                  "actionType": "link",
+                  "link": "/crud/${id}"
+                },
+		{
+                  "type": "button",
+                  "label": "删除",
+                  "level": "danger",
+                  "actionType": "ajax",
+                  "confirmText": "您确认要删除?",
+                  "api": "get:${API_HOST}/api/del/$id"
+                }
+	      ]
+	    }
+	]
       },
       {
         "name": "audio",

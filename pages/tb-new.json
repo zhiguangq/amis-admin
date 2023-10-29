@@ -16,7 +16,7 @@
       "type": "form",
       "redirect": "/tb/list",
       "name": "sample-edit-form",
-      "api": "${API_HOST}/create",
+      "api": "${API_HOST}/api/create",
       "controls": [
         {
           "type": "text",
